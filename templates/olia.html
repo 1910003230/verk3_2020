@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>oliu verð:</title>
+        <meta charset="utf-8">
+    </header>
+    <body>
+        {% for i in verd %}
+        <h1>Nánari upplýsingar bensínstöðvar</h1>
+            <h3>Söluaðili: {{i['company']}}</h3>
+            <h3>Staður: {{i['name']}}</h3>
+            <h3>Verð á 1. lítra af Bensíni, 95 oktan: {{i['bensin95']}} kr.</h3>
+            <h3>Verð á 1. lítra af Dísel olíu: {{i['diesel']}} kr.</h3>
+        {% endfor %}
+    </body>
+</html>

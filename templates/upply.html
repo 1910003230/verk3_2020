@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>test</title>
+        <meta charset="utf-8">
+        <a href="/"><h1>forsíða</h1></a> 
+    </header>
+    <body>
+        <br>
+        {% for i in stadur %}
+            <a href="/olia/{{i['key']}}">{{i['company']}}</a> - {{i['name']}} <br>
+        {% endfor %}
+        <h3>Fjöldi stöðva: {{fjoldi}}</h1>
+    </body>
+</html>

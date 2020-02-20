@@ -1,0 +1,73 @@
+body{
+	max-width: 50em;
+    margin: 0 auto;
+    padding: 1em;
+	font-family: sans-serif;
+	line-height: 1;
+    background-color: blanchedalmond;
+}
+
+
+.titil {
+    color: crimson;
+}
+
+header,
+nav,
+section,
+div,
+footer{
+    flex: 1 100%
+}
+
+header{
+	order: 1;
+	background: burlywood;
+    text-align: center;
+}
+nav{
+    order: 2;
+}
+div{
+    order: 3;
+}
+
+.BBB {
+    order: 4;
+    text-align: center;
+    padding: 0.3em;
+    max-width: 20em;
+    margin: 0 auto;
+	background: yellow;
+}
+
+
+.navi{
+	display: block;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	justify-content: space-around;
+
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+.navi a {
+	display: block;
+	text-decoration: none;
+	background: #f00;
+	color: #ff0;
+	padding: .5em 2em;
+	color:gold;
+}
+
+.display3 img{
+	display: inline-block;
+    padding: 0 auto;
+    max-width: 10em;
+    margin: 1em;
+    border: 3px crimson;
+}
+
+

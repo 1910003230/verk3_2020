@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upplýsingar</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body class="col">
+        <h4 class="titil">Forsíða</h4>    
+        <header>    
+            <h1>
+            Söluaðilar eldsneytis á Íslandi
+            </h1>
+        </header>
+        <nav>
+            <ul class="navi">
+            </ul>
+        </nav>
+        <div class="display3">
+            {% for x in Info4 %}
+                <a href="/{{x}}">
+                    <img class="mynd" src='static/{{x+".png"}}'>
+                </a>
+            {% endfor %}
+        </div>
+        <footer class="BBB">
+            <h1>Besta verðið</h1>
+            {% for x in bestB%}
+                Ódýrasta bensínið: {{x['bensin95']}} kr. er hjá {{x['company']}}, {{x['name']}}. <br>
+            {% endfor %}
+            {% for y in bestD %}
+                Ódýrasta díesel olían: {{y['diesel']}} kr. er hjá {{y['company']}}, {{y['name']}}.
+            {% endfor %}
+        </footer>
+        <hr>
+        <p>&copy; & &reg; Allur réttur áskilinn Lomain</p>
+    </body>
+</html>
