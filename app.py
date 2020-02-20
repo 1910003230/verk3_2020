@@ -43,10 +43,6 @@ def test():
             bestD.append(x)
     return render_template('home.html', Info4=Info4, Info5=Info5, bestB=bestB, bestD=bestD)
 
-@app.route('/info')
-def index():
-    return render_template('info.html', Info=Info, Info4=Info4)
-
 @app.route('/<id>')
 def fyrirtæk(id):
     stadur=[]
